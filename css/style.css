@@ -1,0 +1,85 @@
+@import url(reset.css);
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  padding: 40px 0;
+  background: 	#D8BFD8;
+}
+.header__list{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header__list li{
+  position: relative;
+}
+
+.header__list li a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main{
+  background:#FFEFD5;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.cards__container{
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+.cards{
+  height: 500px;
+  position: relative;
+}
+.cards>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 1 1 45%;
+  outline: 1px solid black;
+}
+
+.cards>p{
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  background: rgba(255, 99, 71, 0.2);
+  padding: 30px 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cards>p:hover{
+  opacity:1;
+}
+
+.fixed{
+  position: fixed;
+  left: 0.3%;
+  top: 40%;
+  background: #D8BFD8;
+}
+
+.fixed ul li{
+  outline: 1px solid black;
+  padding: 10px;
+}
+
+.fixed ul li>a{
+  text-decoration: none;
+  color: black;
+}
